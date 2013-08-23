@@ -3,9 +3,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-	<form action="/upload" method="post">
+	<form action="/upload" enctype="multipart/form-data" method="post">
 		<textarea name="text" cols="60" rows="20"></textarea>
-		<input type="submit" value="Submit text">
+		<input type="file" name="upload" multiple="multiple">
+		<input type="submit" value="Upload file">
 	</form>
 </body>
 </html>
